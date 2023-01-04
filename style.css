@@ -1,0 +1,51 @@
+@font-face {
+    font-family:Norse-Bold;
+    src:url(Norse-Bold.otf);
+}
+
+body {
+    display:flex;
+    flex-direction:row;
+    height:100vh;
+    margin:0;
+}
+
+#sidebar {
+    color:white;
+    padding-top:12rem;
+    background-image:url("background.png");
+    background-size:cover;
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#sidebar a {
+    color:white
+}
+
+#photo-cred {
+    margin-top:auto;
+}
+
+#title {
+    width:100%;
+    background-color:#0a0a0a71;
+    height:20%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:0;
+    padding:1rem 0;
+}
+
+h1 {
+    font-family:Norse-Bold;
+    font-size:5rem;
+}
+
+img {
+    height:100%;
+}
