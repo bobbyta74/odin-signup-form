@@ -8,6 +8,7 @@ body {
     flex-direction:row;
     height:100vh;
     margin:0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #sidebar {
@@ -15,18 +16,20 @@ body {
     padding-top:12rem;
     background-image:url("background.png");
     background-size:cover;
-    width:40%;
+    width:max(40%, 250px);
     display:flex;
     flex-direction:column;
     align-items:center;
 }
 
 #sidebar a {
-    color:white
+    color:#bebebe;
 }
 
 #photo-cred {
     margin-top:auto;
+    font-size:small;
+    color:#bebebe;
 }
 
 #title {
@@ -48,4 +51,39 @@ h1 {
 
 img {
     height:100%;
+}
+
+#main {
+    display:flex;
+    flex-direction:column;
+}
+
+#main>*{
+    padding-left:3rem;
+    padding-right:min(12rem, 20%);
+}
+
+#field-container {
+    display:grid;
+    grid-template-columns:repeat(2, 40%);
+    column-gap:15%;
+    row-gap:10%;
+}
+
+input {
+    width:100%;
+}
+
+.grey {
+    display:flex;
+    flex-direction:column;
+}
+
+button {
+    font-weight:650;
+}
+
+#disclaimer {
+    font-size:1.25rem;
+    font-weight:800;
 }

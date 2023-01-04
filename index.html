@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="sidebar">
@@ -16,6 +17,44 @@
         <p id="photo-cred">Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a> on Unsplash</p>
     </div>
     <div id="main">
+        <div id="disclaimer" class="grey">
+            <p>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <em>now</em> to get started. <br><br>
+                You <em>know</em> you want to.</p>
+        </div>
+        <form action="/form-handling-page" method="post">
+            <h2>Let's do this!</h2>
+            <div id="field-container">
+                <div>
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" name="firstname" id="firstname">
+                </div>
+                <div>
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" name="lastname" id="lastname">
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="tel">PHONE NUMBER</label>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+                <div>
+                    <label for="pass">PASSWORD</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div>
+                    <label for="confirmpass">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirmpass" id="confirmpass">
+                </div>
+            </div>
+            <!-- WHY DOES THIS STACK ON TOP OF THE PASSWORD FIELDS BLUD-->
+            <div class="grey">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="/login-page">Log in</a></p>
+            </div>
+        </form>
 
     </div>
 </body>
