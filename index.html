@@ -21,41 +21,38 @@
             <p>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <em>now</em> to get started. <br><br>
                 You <em>know</em> you want to.</p>
         </div>
-        <form action="/form-handling-page" method="post">
+        <form action="/form-handling-page" method="post" id="theform">
             <h2>Let's do this!</h2>
-            <div id="field-container">
-                <div>
-                    <label for="firstname">FIRST NAME</label>
-                    <input type="text" name="firstname" id="firstname">
-                </div>
-                <div>
-                    <label for="lastname">LAST NAME</label>
-                    <input type="text" name="lastname" id="lastname">
-                </div>
-                <div>
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div>
-                    <label for="tel">PHONE NUMBER</label>
-                    <input type="tel" name="tel" id="tel">
-                </div>
-                <div>
-                    <label for="pass">PASSWORD</label>
-                    <input type="password" name="pass" id="pass">
-                </div>
-                <div>
-                    <label for="confirmpass">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirmpass" id="confirmpass">
-                </div>
+            <div>
+                <label for="firstname">FIRST NAME</label>
+                <input type="text" name="firstname" id="firstname">
             </div>
-            <!-- WHY DOES THIS STACK ON TOP OF THE PASSWORD FIELDS BLUD-->
-            <div class="grey">
-                <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="/login-page">Log in</a></p>
+            <div>
+                <label for="lastname">LAST NAME</label>
+                <input type="text" name="lastname" id="lastname">
+            </div>
+            <div>
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="tel">PHONE NUMBER</label>
+                <input type="tel" name="tel" id="tel">
+            </div>
+            <div>
+                <label for="pass">PASSWORD</label>
+                <input type="password" name="pass" id="pass">
+            </div>
+            <div>
+                <label for="confirmpass">CONFIRM PASSWORD</label>
+                <input type="password" name="confirmpass" id="confirmpass">
             </div>
         </form>
-
+        <div class="grey" id="bottom">
+            <button>Create Account</button>
+            <p>Already have an account? <a href="/login-page">Log in</a></p>
+        </div>
+        <!-- WHY DOES THIS STACK ON TOP OF THE PASSWORD FIELDS BLUD-->
     </div>
 </body>
 </html>
