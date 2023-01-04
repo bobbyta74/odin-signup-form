@@ -7,6 +7,8 @@
     <title>Signup form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="sidebar">
@@ -24,35 +26,35 @@
         <form action="/form-handling-page" method="post" id="theform">
             <h2>Let's do this!</h2>
             <div>
-                <label for="firstname">FIRST NAME</label>
-                <input type="text" name="firstname" id="firstname">
+                <label for="firstname">FIRST NAME*</label>
+                <input type="text" name="firstname" id="firstname" required>
             </div>
             <div>
                 <label for="lastname">LAST NAME</label>
                 <input type="text" name="lastname" id="lastname">
             </div>
             <div>
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email">
+                <label for="email">EMAIL*</label>
+                <input type="email" name="email" id="email" required>
             </div>
             <div>
                 <label for="tel">PHONE NUMBER</label>
                 <input type="tel" name="tel" id="tel">
             </div>
             <div>
-                <label for="pass">PASSWORD</label>
-                <input type="password" name="pass" id="pass">
+                <label for="pass">PASSWORD*</label>
+                <input type="password" name="pass" id="pass" required>
             </div>
             <div>
-                <label for="confirmpass">CONFIRM PASSWORD</label>
-                <input type="password" name="confirmpass" id="confirmpass">
+                <label for="confirmpass">CONFIRM PASSWORD*</label>
+                <input type="password" name="confirmpass" id="confirmpass" required>
             </div>
+            <span></span>
         </form>
         <div class="grey" id="bottom">
-            <button>Create Account</button>
+            <button type="submit" form="theform">Create Account</button>
             <p>Already have an account? <a href="/login-page">Log in</a></p>
         </div>
-        <!-- WHY DOES THIS STACK ON TOP OF THE PASSWORD FIELDS BLUD-->
     </div>
 </body>
 </html>
