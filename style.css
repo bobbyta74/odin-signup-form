@@ -101,11 +101,7 @@ input:focus {
     box-shadow:0 0 4px grey;
 }
 
-input:required {
-    border:2px solid #E5E7EB;
-}
-
-input:invalid, .error {
+input:user-invalid {
     border-color:#b91c1c;
 }
 
