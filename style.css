@@ -109,6 +109,10 @@ input:invalid, .error {
     border-color:#b91c1c;
 }
 
+span {
+    color:#b91c1c;
+}
+
 .grey {
     display:flex;
     flex-direction:column;
